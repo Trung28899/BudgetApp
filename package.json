@@ -1,0 +1,22 @@
+{
+  "name": "budget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trung28899/BudgetApp.git"
+  },
+  "author": "Trung Trinh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trung28899/BudgetApp/issues"
+  },
+  "homepage": "https://github.com/Trung28899/BudgetApp#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

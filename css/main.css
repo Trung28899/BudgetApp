@@ -1,3 +1,45 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow: hidden; }
+
+.top {
+  height: 17rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/back.png);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 100%; }
+  .top .availableBudget {
+    font-size: 1rem; }
+  .top .availableAmount {
+    font-size: 2.5rem; }
+  .top .budget__income,
+  .top .budget__expenses {
+    position: relative;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    width: 26%;
+    left: 37%;
+    height: 50px; }
+  .top .budget__income {
+    margin-bottom: 10px;
+    background-color: #28b9b5;
+    margin-top: 20px; }
+  .top .budget__expenses {
+    background-color: #ff5049; }
+  .top .value {
+    color: whitesmoke;
+    font-weight: bold; }
+  .top .incomeExpense {
+    font-size: 0.85rem;
+    padding: 1px 10px;
+    font-weight: bold; }
+  .top .span-percentage {
+    position: absolute;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px; }

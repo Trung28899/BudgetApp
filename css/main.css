@@ -29,7 +29,8 @@ body {
     background-color: #ff5049; }
   .top .value {
     color: whitesmoke;
-    font-weight: bold; }
+    font-weight: bold;
+    float: left; }
   .top .incomeExpense {
     font-size: 0.85rem;
     padding: 1px 10px;

@@ -1,0 +1,43 @@
+// Media Query Mixins, have more in _mobile.scss
+// extra Small
+@mixin mediaXSm {
+  @media screen and (max-width: 321px) {
+    @content;
+  }
+}
+
+// Media Query Mixins, have more in _mobile.scss
+// Small
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  // Medium Ipad max
+  @mixin mediaMd {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  // Large Ipad pro
+  @mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+      @content;
+    }
+  }
+  
+  // mac, normal laptop
+  @mixin mediaLger {
+    @media screen and (min-width: 1171px) and (max-width: 1440px) {
+      @content;
+    }
+  }
+  
+  // Xtra Large
+  @mixin mediaXL {
+    @media screen and (min-width: 1441px) {
+      @content;
+    }
+  }

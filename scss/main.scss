@@ -1,5 +1,5 @@
 @import "config";
-@import "mobile";
+
 body {
   font-family: "Poppins", sans-serif;
   overflow: scroll;
@@ -55,6 +55,7 @@ body {
   z-index: 0;
 
   h1{
+    margin: 2rem 0rem; 
     font-size: 2.2rem;
     font-weight: bold;
   }
@@ -74,23 +75,24 @@ body {
     text-align: left;
     height: 5rem;
     font-size: 1.5rem;
-    padding: 1.6rem 1rem; 
+    padding: 1.7rem 1rem; 
 
     .btn-danger{
       position: absolute;
       right: 5%;
-      margin: -0.5rem 1rem;
+      margin: -0.4rem 1rem;
     }
 
     .btn-warning{
       position: absolute;
       right: 15%;
-      margin: -0.5rem 1rem; 
+      margin: -0.4rem 1rem; 
     }
 
   }
 }
 
+@import "mobile";
 
 
 

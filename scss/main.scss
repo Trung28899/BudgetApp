@@ -6,6 +6,10 @@ body {
   background: whitesmoke;
 }
 
+/*****************************************************
+  STYLING FOR main.html
+*****************************************************/
+
 .top {
   font-family: 'Roboto', sans-serif;
   position: fixed;
@@ -37,6 +41,7 @@ body {
     top: 0%;
     right: 0%;
     font-size: 0.75rem;
+    height: 2.5rem;
   }
 
   .listing{
@@ -89,6 +94,139 @@ body {
       margin: -0.4rem 1rem; 
     }
 
+  }
+}
+
+/*****************************************************
+  STYLING FOR budget.html
+*****************************************************/
+.top-budget{
+  @extend .top; 
+  .btn-primary{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 0.75rem;
+    width: 10%;
+    height: 2.5rem;
+  }
+
+  h2{
+    position: relative;
+    color: whitesmoke;
+    top: 1rem; 
+    font-size: 1.25rem;
+  }
+
+  p{
+    @extend h2; 
+    font-size: 4rem;
+  }
+
+  .badge-danger, 
+  .badge-info{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    left: 35%;
+    height: 3.25rem;
+    margin: 0.25rem 0;
+    padding: 1rem 0.5rem;
+    font-size: 1.25rem;
+
+    strong{
+      position: absolute;
+      right: 15%; 
+    }
+
+    .badge-secondary{
+      position: absolute;
+      right: 5%; 
+    }
+  }
+
+  .badge-info{
+    margin-top: -0.25rem;
+  }
+}
+
+.budget-add-items{
+  @extend .listing-container; 
+  position: absolute;
+  width: 100%;
+  top: 20rem; 
+  left: 30%; 
+
+  .row{
+    position: relative;
+    left: -1%;
+  }
+
+  div{
+    margin: 0rem 0.25rem; 
+  }
+
+  #sign{
+    width: 3.5rem;
+    height: 3rem;
+  }
+
+  .Description{
+    width: 25rem; 
+    height: 3rem;
+  }
+
+  .value{
+    width: 7.5rem; 
+    height: 3rem;
+  }
+
+  .button-check{
+    height: 3rem;
+    width: 3rem;
+
+  }
+
+  hr{
+    position: relative;
+    top: 1rem; 
+    width: 1000%; 
+    left: -80%; 
+  }
+}
+
+.expenses-and-income{
+  position: absolute;
+  z-index: -1;
+  top: 30rem; 
+  left: 15%; 
+  
+  ul{
+    list-style: none;
+  }
+
+  li{
+    margin: 0.5rem 0rem;
+    font-size: 1.25rem;
+
+    span{
+      font-weight: bolder;
+    }
+
+    .badge{
+      position: absolute;
+      right: 5%; 
+    }
+  }
+
+  .income-amount{
+    position: absolute;
+    right: 5%;
+  }
+
+  .expense-amount{
+    position: absolute;
+    right: 12%; 
   }
 }
 

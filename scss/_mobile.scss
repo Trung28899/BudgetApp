@@ -19,6 +19,23 @@
             width: 100%;
         }
     }
+
+    .top-budget{
+        height: 70rem;
+        .btn-primary{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            font-size: 3rem;
+            width: 8%;
+            height: 10rem;
+        }
+        .btn-danger{
+            font-size: 3rem;
+            width: 8%;
+            height: 10rem;
+        }
+    }
 }
 
 // Medium Ipad maximum size

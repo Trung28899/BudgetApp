@@ -3,7 +3,10 @@ body {
   overflow: scroll;
   background: whitesmoke; }
 
-.top {
+/*****************************************************
+  STYLING FOR main.html
+*****************************************************/
+.top, .top-budget {
   font-family: 'Roboto', sans-serif;
   position: fixed;
   height: 17rem;
@@ -12,41 +15,42 @@ body {
   background-position: center;
   width: 100%;
   z-index: 1; }
-  .top h3 {
+  .top h3, .top-budget h3 {
     position: relative;
     top: 3rem;
     font-weight: bolder;
     font-size: 3rem; }
-  .top .btn-primary {
+  .top .btn-primary, .top-budget .btn-primary {
     position: relative;
     width: 16%;
     left: 42%;
     height: 20%;
     top: 5rem; }
-  .top .btn-danger {
+  .top .btn-danger, .top-budget .btn-danger {
     position: absolute;
     top: 0%;
     right: 0%;
-    font-size: 0.75rem; }
-  .top .listing li {
+    font-size: 0.75rem;
+    height: 2.5rem; }
+  .top .listing li, .top-budget .listing li {
     width: 50%; }
 
-.listing-container {
+.listing-container, .budget-add-items {
   position: absolute;
   width: 70%;
   left: 15%;
   height: 1000px;
   top: 17rem;
   z-index: 0; }
-  .listing-container h1 {
+  .listing-container h1, .budget-add-items h1 {
     margin: 2rem 0rem;
     font-size: 2.2rem;
     font-weight: bold; }
-  .listing-container ul {
+  .listing-container ul, .budget-add-items ul {
     list-style: none; }
-  .listing-container li {
+  .listing-container li, .budget-add-items li {
     margin: 0.5rem 0rem; }
-  .listing-container .badge {
+  .listing-container .badge, .budget-add-items .badge {
     position: relative;
     left: 15%;
     width: 70%;
@@ -54,92 +58,197 @@ body {
     height: 5rem;
     font-size: 1.5rem;
     padding: 1.7rem 1rem; }
-    .listing-container .badge .btn-danger {
+    .listing-container .badge .btn-danger, .budget-add-items .badge .btn-danger {
       position: absolute;
       right: 5%;
       margin: -0.4rem 1rem; }
-    .listing-container .badge .btn-warning {
+    .listing-container .badge .btn-warning, .budget-add-items .badge .btn-warning {
       position: absolute;
       right: 15%;
       margin: -0.4rem 1rem; }
 
+/*****************************************************
+  STYLING FOR budget.html
+*****************************************************/
+.top-budget .btn-primary {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: 0.75rem;
+  width: 10%;
+  height: 2.5rem; }
+
+.top-budget h2, .top-budget p {
+  position: relative;
+  color: whitesmoke;
+  top: 1rem;
+  font-size: 1.25rem; }
+
+.top-budget p {
+  font-size: 4rem; }
+
+.top-budget .badge-danger,
+.top-budget .badge-info {
+  position: relative;
+  text-align: left;
+  width: 30%;
+  left: 35%;
+  height: 3.25rem;
+  margin: 0.25rem 0;
+  padding: 1rem 0.5rem;
+  font-size: 1.25rem; }
+  .top-budget .badge-danger strong,
+  .top-budget .badge-info strong {
+    position: absolute;
+    right: 15%; }
+  .top-budget .badge-danger .badge-secondary,
+  .top-budget .badge-info .badge-secondary {
+    position: absolute;
+    right: 5%; }
+
+.top-budget .badge-info {
+  margin-top: -0.25rem; }
+
+.budget-add-items {
+  position: absolute;
+  width: 100%;
+  top: 20rem;
+  left: 30%; }
+  .budget-add-items .row {
+    position: relative;
+    left: -1%; }
+  .budget-add-items div {
+    margin: 0rem 0.25rem; }
+  .budget-add-items #sign {
+    width: 3.5rem;
+    height: 3rem; }
+  .budget-add-items .Description {
+    width: 25rem;
+    height: 3rem; }
+  .budget-add-items .value {
+    width: 7.5rem;
+    height: 3rem; }
+  .budget-add-items .button-check {
+    height: 3rem;
+    width: 3rem; }
+  .budget-add-items hr {
+    position: relative;
+    top: 1rem;
+    width: 1000%;
+    left: -80%; }
+
+.expenses-and-income {
+  position: absolute;
+  z-index: -1;
+  top: 30rem;
+  left: 15%; }
+  .expenses-and-income ul {
+    list-style: none; }
+  .expenses-and-income li {
+    margin: 0.5rem 0rem;
+    font-size: 1.25rem; }
+    .expenses-and-income li span {
+      font-weight: bolder; }
+    .expenses-and-income li .badge {
+      position: absolute;
+      right: 5%; }
+  .expenses-and-income .income-amount {
+    position: absolute;
+    right: 5%; }
+  .expenses-and-income .expense-amount {
+    position: absolute;
+    right: 12%; }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .top .btn-primary {
+  .top .btn-primary, .top-budget .btn-primary {
     width: 30%;
     left: 35%; }
-  .listing-container .badge {
+  .listing-container .badge, .budget-add-items .badge {
     left: 0%;
-    width: 100%; } }
+    width: 100%; }
+  .top-budget {
+    height: 70rem; }
+    .top-budget .btn-primary {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      font-size: 3rem;
+      width: 8%;
+      height: 10rem; }
+    .top-budget .btn-danger {
+      font-size: 3rem;
+      width: 8%;
+      height: 10rem; } }
 
 @media screen and (max-width: 768px) {
-  .top .btn-primary {
+  .top .btn-primary, .top-budget .btn-primary {
     width: 30%;
     left: 35%; }
-  .listing-container .badge {
+  .listing-container .badge, .budget-add-items .badge {
     left: 0%;
     width: 100%; } }
 
 @media screen and (max-width: 500px) {
-  .top .btn-primary {
+  .top .btn-primary, .top-budget .btn-primary {
     width: 40%;
     left: 30%; }
-  .top h3 {
+  .top h3, .top-budget h3 {
     position: relative;
     top: 3rem;
     font-weight: bolder;
     font-size: 2.5rem; }
-  .top .btn-danger {
+  .top .btn-danger, .top-budget .btn-danger {
     font-size: 0.55rem; }
-  .listing-container {
+  .listing-container, .budget-add-items {
     width: 100%;
     left: -11%; }
-    .listing-container h1 {
+    .listing-container h1, .budget-add-items h1 {
       position: relative;
       margin: 2.75rem 0rem;
       font-weight: bold;
       left: 12.5%; }
-    .listing-container .badge {
+    .listing-container .badge, .budget-add-items .badge {
       position: relative;
       left: 0%;
       width: 115%;
       height: 5rem;
       font-size: 1.2rem;
       padding: 1.85rem 1rem; }
-      .listing-container .badge .btn-danger {
+      .listing-container .badge .btn-danger, .budget-add-items .badge .btn-danger {
         position: absolute;
         right: 0%;
         margin: -0.4rem 1rem;
         font-size: 0.7rem; }
-      .listing-container .badge .btn-warning {
+      .listing-container .badge .btn-warning, .budget-add-items .badge .btn-warning {
         position: absolute;
         right: 12%;
         margin: -0.4rem 1rem;
         font-size: 0.7rem; } }
 
 @media screen and (max-width: 321px) {
-  .top .btn-primary {
+  .top .btn-primary, .top-budget .btn-primary {
     width: 60%;
     left: 20%; }
-  .top h3 {
+  .top h3, .top-budget h3 {
     position: relative;
     top: 3rem;
     font-weight: bolder;
     font-size: 2rem; }
-  .top .btn-danger {
+  .top .btn-danger, .top-budget .btn-danger {
     font-size: 0.55rem; }
-  .listing-container {
+  .listing-container, .budget-add-items {
     width: 100%;
     height: 1000px;
     left: -11%;
     top: 17rem;
     z-index: 0; }
-    .listing-container h1 {
+    .listing-container h1, .budget-add-items h1 {
       position: relative;
       margin: 3rem 0rem;
       font-size: 1.8rem;
       font-weight: bold;
       left: 12.5%; }
-    .listing-container .badge {
+    .listing-container .badge, .budget-add-items .badge {
       position: relative;
       left: 0%;
       width: 115%;
@@ -147,12 +256,12 @@ body {
       height: 5rem;
       font-size: 1rem;
       padding: 1.85rem 1rem; }
-      .listing-container .badge .btn-danger {
+      .listing-container .badge .btn-danger, .budget-add-items .badge .btn-danger {
         position: absolute;
         right: 0%;
         margin: -0.3rem 1rem;
         font-size: 0.6rem; }
-      .listing-container .badge .btn-warning {
+      .listing-container .badge .btn-warning, .budget-add-items .badge .btn-warning {
         position: absolute;
         right: 12%;
         margin: -0.3rem 1rem;

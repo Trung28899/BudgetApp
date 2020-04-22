@@ -2,9 +2,118 @@
 @import "mobile";
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  overflow: scroll;
+  background: whitesmoke;
 }
 
+.top {
+  font-family: 'Roboto', sans-serif;
+  position: fixed;
+  height: 17rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../img/back.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: 1;
+
+  h3{
+    position: relative;
+    top: 3rem;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+
+  .btn-primary{
+    position: relative;
+    width: 16%;
+    left: 42%;
+    height: 20%;
+    top: 5rem;
+  }
+
+  .btn-danger{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 0.75rem;
+  }
+
+  .listing{
+    li{
+      width: 50%;
+    }
+  }
+}
+
+.listing-container{
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  height: 1000px;
+  top: 17rem;
+  z-index: 0;
+
+  h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  li{
+    margin: 0.5rem 0rem;
+  }
+
+  .badge{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    text-align: left;
+    height: 5rem;
+    font-size: 1.5rem;
+    padding: 1.6rem 1rem; 
+
+    .btn-danger{
+      position: absolute;
+      right: 5%;
+      margin: -0.5rem 1rem;
+    }
+
+    .btn-warning{
+      position: absolute;
+      right: 15%;
+      margin: -0.5rem 1rem; 
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .top {
   height: 17rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
@@ -65,3 +174,4 @@ body {
     border-radius: 3px;
   }
 }
+*/

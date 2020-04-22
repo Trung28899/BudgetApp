@@ -1,0 +1,10 @@
+Progress of making the application: 
+- Completing the UI: 
++, Main screen fully responsive with button features
++, view / update responsive fully responsive
+
+- Page transfer button functional for every pages
+- Register / Login php functional
+- Main screen php functional
+- View / Update / Delete budget page functional
+

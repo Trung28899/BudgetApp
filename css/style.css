@@ -245,3 +245,38 @@ a:hover {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 321px){
+  .btn1{
+    position: relative;
+    height: 35px;
+    font-size: 0.8rem;
+    width: 80%;
+    left: 8%;
+  }
+
+  .input-div > div {
+    position: relative;
+    height: 25px;
+  }
+
+  .title, 
+  .titleUp{
+    font-size: 0.75rem;
+  }
+
+  .login-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .login-content img {
+    height: 120px;
+  }
+
+  .login-content p{
+    position: relative;
+    font-size: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+}

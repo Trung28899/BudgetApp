@@ -20,7 +20,7 @@ body {
     top: 3rem;
     font-weight: bolder;
     font-size: 3rem; }
-  .top .btn-primary, .top-budget .btn-primary {
+  .top .primary-main, .top-budget .primary-main {
     position: relative;
     width: 16%;
     left: 42%;
@@ -109,39 +109,33 @@ body {
 .top-budget .badge-info {
   margin-top: -0.25rem; }
 
-.budget-add-items {
-  position: absolute;
-  width: 100%;
-  top: 20rem;
-  left: 30%; }
-  .budget-add-items .row {
-    position: relative;
-    left: -1%; }
-  .budget-add-items div {
-    margin: 0rem 0.25rem; }
-  .budget-add-items #sign {
-    width: 3.5rem;
-    height: 3rem; }
-  .budget-add-items .Description {
-    width: 25rem;
-    height: 3rem; }
-  .budget-add-items .value {
-    width: 7.5rem;
-    height: 3rem; }
-  .budget-add-items .button-check {
-    height: 3rem;
-    width: 3rem; }
-  .budget-add-items hr {
-    position: relative;
-    top: 1rem;
-    width: 1000%;
-    left: -80%; }
+.budget-add-items .row {
+  position: relative;
+  left: -1%; }
+
+.budget-add-items div {
+  margin: 0rem 0.25rem; }
+
+.budget-add-items #sign {
+  width: 3.5rem;
+  height: 3rem; }
+
+.budget-add-items .Description {
+  width: 25rem;
+  height: 3rem; }
+
+.budget-add-items .value {
+  width: 7.5rem;
+  height: 3rem; }
+
+.budget-add-items .button-check {
+  height: 3rem;
+  width: 3rem; }
 
 .expenses-and-income {
   position: absolute;
-  z-index: -1;
-  top: 30rem;
-  left: 15%; }
+  z-index: 0;
+  top: 30rem; }
   .expenses-and-income ul {
     list-style: none; }
   .expenses-and-income li {
@@ -166,19 +160,23 @@ body {
   .listing-container .badge, .budget-add-items .badge {
     left: 0%;
     width: 100%; }
-  .top-budget {
-    height: 70rem; }
-    .top-budget .btn-primary {
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      font-size: 3rem;
-      width: 8%;
-      height: 10rem; }
-    .top-budget .btn-danger {
-      font-size: 3rem;
-      width: 8%;
-      height: 10rem; } }
+  /*
+    .top-budget{
+        height: 70rem;
+        .btn-primary{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            font-size: 3rem;
+            width: 8%;
+            height: 10rem;
+        }
+        .btn-danger{
+            font-size: 3rem;
+            width: 8%;
+            height: 10rem;
+        }
+    } */ }
 
 @media screen and (max-width: 768px) {
   .top .btn-primary, .top-budget .btn-primary {

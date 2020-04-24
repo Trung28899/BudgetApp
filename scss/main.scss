@@ -4,6 +4,8 @@ body {
   font-family: "Poppins", sans-serif;
   overflow: scroll;
   background: whitesmoke;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*****************************************************
@@ -11,14 +13,8 @@ body {
 *****************************************************/
 
 .top {
-  font-family: 'Roboto', sans-serif;
+  @include top; 
   position: fixed;
-  height: 17rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../img/back.png);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
   z-index: 1;
 
   h3{
@@ -37,11 +33,7 @@ body {
   }
 
   .btn-danger{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    font-size: 0.75rem;
-    height: 2.5rem;
+    @include logout-button;
   }
 
   .listing{
@@ -101,7 +93,8 @@ body {
   STYLING FOR budget.html
 *****************************************************/
 .top-budget{
-  @extend .top; 
+  @include top; 
+  position: absolute;
   .btn-primary{
     position: absolute;
     top: 0%;
@@ -111,7 +104,12 @@ body {
     height: 2.5rem;
   }
 
+  .btn-danger{
+    @include logout-button; 
+  }
+
   h2{
+    text-align: center;
     position: relative;
     color: whitesmoke;
     top: 1rem; 
@@ -138,20 +136,25 @@ body {
       position: absolute;
       right: 15%; 
     }
-
-    .badge-secondary{
-      position: absolute;
-      right: 5%; 
-    }
   }
 
   .badge-info{
     margin-top: -0.25rem;
   }
+
+  .badge-secondary{
+    position: absolute;
+    right: 5%; 
+  }
 }
 
 .budget-add-items{
-  @extend .listing-container; 
+  position: absolute;
+  top: 19rem; 
+  width: 60%;
+  left: 25%;
+  background: whitesmoke;
+
 
   .row{
     position: relative;
@@ -163,8 +166,11 @@ body {
   }
 
   #sign{
-    width: 3.5rem;
+    width: 6rem;
     height: 3rem;
+    border: 1px solid grey;
+    font-size: 0.85rem;
+    @include select-tag-arrow; 
   }
 
   .Description{
@@ -178,16 +184,22 @@ body {
   }
 
   .button-check{
+    font-size: 0.85rem;
     height: 3rem;
-    width: 3rem;
+    width: 7.5rem;
+  }
 
+  hr{
+    position: relative;
+    left: -20%;
   }
 }
 
 .expenses-and-income{
   position: absolute;
   z-index: 0;
-  top: 30rem; 
+  top: 28rem; 
+  left: 12.5%; 
     
   ul{
     list-style: none;
@@ -203,7 +215,7 @@ body {
 
     .badge{
       position: absolute;
-      right: 5%; 
+      right: 1%; 
     }
   }
 

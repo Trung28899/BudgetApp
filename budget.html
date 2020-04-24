@@ -18,14 +18,13 @@
     crossorigin="anonymous"
     />
 
-    <title>Budgety</title>
+    <title>Test Page</title>
   </head>
   <body>
     <div class="top-budget">
-        <button type="button" class="btn btn-danger"> <i class="fas fa-sign-out-alt"></i>  Log Out</button>
-        <button type="button" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back To Main Page</button>
-        <h2 class="text-center">Available Budget In Record Name: </h2>
-        <p class="text-center">- 0.00</p>
+        <button onclick="window.location.href='main.html'" type="button" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back To Main Page</button>
+        <h2>Available Budget In Record Name: </h2>
+        <p>- 0.00</p>
         <span class="badge badge-info">Income:
             <strong>+ 0.00</strong>
         </span>
@@ -34,7 +33,7 @@
             <strong>- 0.00</strong>
             <span class="badge badge-secondary">__</span>
         </span>
-      <!--End of .top-->
+      <!--End of .top-budget -->
     </div>
     
     <div class="budget-add-items">
@@ -42,8 +41,8 @@
             <div class="row">
                 <div>
                     <select id="sign">
-                        <option value="plus">+</option>
-                        <option value="minus">-</option>
+                        <option value="plus">Income</option>
+                        <option value="minus">Expense</option>
                     </select>
                 </div>
 
@@ -56,68 +55,69 @@
                 </div>
 
                 <div>
-                    <button type="button" class="btn btn-success button-check"><i class="fas fa-check"></i></button>
+                    <button type="button" class="btn btn-success button-check"><i class="fas fa-check"></i> Add Income</button>
                 </div>
             </div>
-            
         </form>
     </div>
 
-    <div class="container expenses-and-income row">
-        <div class="col-md-5">
-            <h2 class="text-info text-left">Income</h2>
-            <hr>
-            <ul>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-                <li>
-                    Description <span class="income-amount text-success">+1,234$</span>
-                    <hr>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
-            <h2 class="text-danger text-left">Expenses</h2>
-            <hr>
-            <ul>
-                <li>
-                    Description 
-                    <span class="expense-amount text-danger">+1,234$</span>
-                    <span class="badge badge-secondary">__</span>
-                    <hr>
-                </li>
-                <li>
-                    Description 
-                    <span class="expense-amount text-danger">+1,234$</span>
-                    <span class="badge badge-secondary">__</span>
-                    <hr>
-                </li>
-                <li>
-                    Description 
-                    <span class="expense-amount text-danger">+1,234$</span> 
-                    <span class="badge badge-secondary">__</span>
-                    <hr>
-                </li>
-            </ul>
+    <div class="container expenses-and-income">
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="text-info text-left">Income</h2>
+                <hr>
+                <ul>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description <span class="income-amount text-success">+1,234$</span>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h2 class="text-danger text-left">Expenses</h2>
+                <hr>
+                <ul>
+                    <li>
+                        Description 
+                        <span class="expense-amount text-danger">+1,234$</span>
+                        <span class="badge badge-secondary">__</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description 
+                        <span class="expense-amount text-danger">+1,234$</span>
+                        <span class="badge badge-secondary">__</span>
+                        <hr>
+                    </li>
+                    <li>
+                        Description 
+                        <span class="expense-amount text-danger">+1,234$</span> 
+                        <span class="badge badge-secondary">__</span>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

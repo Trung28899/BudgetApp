@@ -6,6 +6,11 @@
 
 // Ipad Pro
 @include mediaLg {
+    html, 
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .top{
         .btn-primary{
             width: 30%;
@@ -20,23 +25,23 @@
         }
     }
 
-    /*
     .top-budget{
-        height: 70rem;
-        .btn-primary{
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            font-size: 3rem;
-            width: 8%;
-            height: 10rem;
-        }
         .btn-danger{
-            font-size: 3rem;
-            width: 8%;
-            height: 10rem;
+            right: 0%; 
         }
-    } */
+    }
+
+    .budget-add-items{
+        width: 80%;
+        left: 15%;
+        #sign{
+            margin: 0rem 0rem; 
+        }
+    }
+
+    .expenses-and-income{
+        left: 2.5%; 
+    }
 }
 
 // Medium Ipad maximum size
@@ -52,6 +57,49 @@
         .badge{
             left: 0%;
             width: 100%;
+        }
+    }
+
+    .top-budget{
+        .btn-primary{
+            width: 12.5%;
+        }
+
+        .badge-danger, 
+        .badge-info{
+            width: 40%;
+            left: 30%;
+        }
+
+        .badge-secondary{
+            right: 4%;
+        }
+    }
+
+    .budget-add-items{
+        width: 95%;
+        left: 5%;
+        #sign{
+            margin: 0rem 0rem; 
+            font-size: 0.75rem;
+        }
+
+        .button-check{
+            width: 6rem;
+        }
+    }
+
+    .expenses-and-income{
+        left: 0%; 
+    }
+
+    .expense-amount{
+        position: absolute;
+        right: 15%;
+
+        .expense-amount{
+            position: absolute;
+            right: 20%; 
         }
     }
 }
@@ -110,6 +158,69 @@
             }
         
         }
+    }
+
+    .top-budget{
+        height: 25rem;
+        .btn-primary{
+            width: 30%;
+            height: 2.75rem;
+        }
+
+        .btn-danger{
+            height: 2.75rem;
+        }
+
+        h2{
+            top: 3.75rem; 
+        }
+    
+        p{
+            top: 3.75rem; 
+        }
+
+        .badge-danger, 
+        .badge-info{
+            top: 5rem;
+            width: 80%;
+            left: 10%;
+        }
+    }
+
+    .budget-add-items{
+        top: 27rem; 
+
+        #sign{
+            position: absolute;
+            width: 30%; 
+            left: 32.5%; 
+        }
+
+        .Description{
+            position: relative;
+            width: 13.5rem;
+            display: block;
+            top: 3.5rem; 
+            left: -5%;
+        }
+
+        .value{
+            position: relative;
+            top: 3.5rem; 
+            left: -12%;
+        }
+
+        .button-check{
+            position: relative;
+            top: 4.5rem; 
+            left: 130%; 
+        }
+    }
+
+    .expenses-and-income{
+        top: 40rem; 
+        left: 0%; 
+        width: 90%;
     }
 }
 

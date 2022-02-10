@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/Trung28899/BudgetApp#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {},
   "description": ""
